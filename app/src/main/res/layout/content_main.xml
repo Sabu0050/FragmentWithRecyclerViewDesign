@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sabututexp.blogdesign.activities.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <com.sabututexp.blogdesign.tabs.SlidingTabLayout
+        android:id="@+id/sld_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58sp">
+    </com.sabututexp.blogdesign.tabs.SlidingTabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sld_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>
